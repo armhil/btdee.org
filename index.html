@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="tr" class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bizi Türk Doktorlarına Emanet Edin — Tıp Bursu</title>
 
   <!-- Favicon -->
@@ -12,15 +13,27 @@
 
   <!-- Tailwind (geliştirme için CDN; üretimde derlenmiş sürümle değiştirin) -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
 
   <style>
-    :root { --brand:#6b21a8; --brand-2:#9333ea; }
-    html,body { font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
-    body::before{
-      content:""; position:fixed; inset:0; pointer-events:none;
-      background-image:radial-gradient(rgba(0,0,0,0.03) 1px, transparent 1px);
-      background-size:10px 10px; z-index:-1;
+    :root {
+      --brand: #6b21a8;
+      --brand-2: #9333ea;
+    }
+
+    html,
+    body {
+      font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image: radial-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+      background-size: 10px 10px;
+      z-index: -1;
     }
   </style>
 </head>
@@ -31,7 +44,8 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <a href="#" class="flex items-center gap-3">
-          <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-[var(--brand)] to-[var(--brand-2)] text-white font-bold">BE</span>
+          <span
+            class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-[var(--brand)] to-[var(--brand-2)] text-white font-bold">BE</span>
           <span class="font-semibold">Bizi Türk Doktorlarına Emanet Edin</span>
         </a>
         <nav class="hidden md:flex items-center gap-6 text-sm">
@@ -41,7 +55,8 @@
           <a href="#voices" class="hover:text-[var(--brand-2)]">Bursiyerlerimizden</a>
         </nav>
         <div class="flex items-center gap-3">
-          <a href="#apply" class="hidden sm:inline-flex px-4 py-2 rounded-xl bg-gradient-to-r from-[var(--brand)] to-[var(--brand-2)] text-white text-sm font-semibold shadow-sm hover:opacity-95">Başvur</a>
+          <a href="#apply"
+            class="hidden sm:inline-flex px-4 py-2 rounded-xl bg-gradient-to-r from-[var(--brand)] to-[var(--brand-2)] text-white text-sm font-semibold shadow-sm hover:opacity-95">Başvur</a>
         </div>
       </div>
     </div>
@@ -54,16 +69,24 @@
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 grid lg:grid-cols-2 gap-12 items-center">
       <div>
-        <span class="inline-block text-xs tracking-wider uppercase font-semibold text-white bg-[var(--brand-2)]/90 px-2 py-1 rounded-md mb-3">Tıp Bursu</span>
+        <span
+          class="inline-block text-xs tracking-wider uppercase font-semibold text-white bg-[var(--brand-2)]/90 px-2 py-1 rounded-md mb-3">Tıp
+          Bursu</span>
         <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
           Bizi Türk Doktorlarına Emanet Edin
         </h1>
         <p class="mt-4 text-gray-600 max-w-xl">
-          <strong>Hacettepe Üniversitesi Tıp Fakültesi</strong>’ndeki <strong>kadın öğrencileri</strong> destekleyen, ihtiyaç ve başarı odaklı bir burs programı. Amacımız, Türkiye’de ve dünyada toplumsal sağlığı yükseltecek geleceğin hekimlerini güçlendirmek.
+          <strong>Hacettepe Üniversitesi Tıp Fakültesi</strong>’ndeki <strong>kadın öğrencileri</strong> destekleyen,
+          ihtiyaç ve başarı odaklı bir burs programı. Amacımız, Türkiye’de ve dünyada toplumsal sağlığı yükseltecek
+          geleceğin hekimlerini güçlendirmek.
         </p>
         <div class="mt-6 flex flex-wrap gap-3">
-          <a id="apply" href="#" class="px-5 py-3 rounded-xl bg-gradient-to-r from-[var(--brand)] to-[var(--brand-2)] text-white font-semibold shadow-md hover:opacity-95">Başvuruya Başla</a>
-          <a href="#qualify" class="px-5 py-3 rounded-xl border border-gray-300 text-gray-700 font-semibold hover:bg-gray-50">Uygunluk Kriterlerine Bak</a>
+          <a id="apply" href="#"
+            class="px-5 py-3 rounded-xl bg-gradient-to-r from-[var(--brand)] to-[var(--brand-2)] text-white font-semibold shadow-md hover:opacity-95">Başvuruya
+            Başla</a>
+          <a href="#qualify"
+            class="px-5 py-3 rounded-xl border border-gray-300 text-gray-700 font-semibold hover:bg-gray-50">Uygunluk
+            Kriterlerine Bak</a>
         </div>
         <!-- Yıllara bağlı kapanış tarihi kaldırıldı -->
       </div>
@@ -81,7 +104,8 @@
             <div class="rounded-xl bg-gray-50 border border-gray-200 flex items-center justify-center">
               <span class="text-xs text-gray-500">Placeholder</span>
             </div>
-            <div class="col-span-3 rounded-xl bg-gradient-to-br from-[var(--brand)] to-[var(--brand-2)] flex items-center justify-center text-white text-sm font-semibold">
+            <div
+              class="col-span-3 rounded-xl bg-gradient-to-br from-[var(--brand)] to-[var(--brand-2)] flex items-center justify-center text-white text-sm font-semibold">
               Hacettepe’nin geleceğin kadın hekimleri
             </div>
           </div>
@@ -130,14 +154,17 @@
         <div class="p-6 rounded-2xl bg-white border border-gray-200 shadow-sm md:col-span-2 lg:col-span-1">
           <h3 class="font-semibold">Değerlendirme</h3>
           <p class="mt-3 text-gray-700 text-sm">
-            Başvurular; Hacettepe'deki hekim arkadaşlarımız ve BTDEE ekibi tarafından bütüncül olarak incelenir. Finale kalan adaylar kısa bir mülakata davet edilir.
+            Başvurular; Hacettepe'deki hekim arkadaşlarımız ve BTDEE ekibi tarafından bütüncül olarak incelenir. Finale
+            kalan adaylar kısa bir mülakata davet edilir.
           </p>
         </div>
 
         <div class="p-6 rounded-2xl bg-white border border-gray-200 shadow-sm">
           <h3 class="font-semibold">Burs kapsamı</h3>
           <p class="mt-3 text-gray-700 text-sm">
-            Burs; <strong>Eylül–Haziran (dahil)</strong> ayları arasında yılda <strong>10 ay</strong> ödenir, <strong>1.–5. sınıflar</strong> için geçerlidir ve aylık yaklaşık <strong>100&nbsp;ABD Doları</strong> düzeyindedir.
+            Burs; <strong>Eylül–Haziran (dahil)</strong> ayları arasında yılda <strong>10 ay</strong> ödenir,
+            <strong>1.–5. sınıflar</strong> için geçerlidir ve aylık yaklaşık <strong>100&nbsp;ABD Doları</strong>
+            düzeyindedir.
           </p>
           <p class="mt-2 text-xs text-gray-500">
             Not: Tutar ve takvim koşullara göre güncellenebilir; resmi duyuruları takip ediniz.
@@ -147,9 +174,12 @@
         <div class="p-6 rounded-2xl bg-white border border-gray-200 shadow-sm">
           <h3 class="font-semibold">Nasıl başvurulur?</h3>
           <p class="mt-3 text-gray-700 text-sm">
-            Belgelerinizi hazırlayıp çevrimiçi başvuru formunu doldurun. Kısa listeye kalan adaylara e-posta ile dönüş yapılır.
+            Belgelerinizi hazırlayıp çevrimiçi başvuru formunu doldurun. Kısa listeye kalan adaylara e-posta ile dönüş
+            yapılır.
           </p>
-          <a href="#" class="mt-4 inline-flex px-4 py-2 rounded-xl bg-gray-900 text-white text-sm font-semibold hover:bg-gray-800">Başvuru formunu aç</a>
+          <a href="#"
+            class="mt-4 inline-flex px-4 py-2 rounded-xl bg-gray-900 text-white text-sm font-semibold hover:bg-gray-800">Başvuru
+            formunu aç</a>
         </div>
       </div>
     </div>
@@ -161,28 +191,38 @@
       <div>
         <h2 class="text-2xl sm:text-3xl font-bold">Hakkında</h2>
         <p class="mt-4 text-gray-700">
-          <strong>“Bizi Türk Doktorlarına Emanet Edin”</strong>, kadın tıp öğrencilerine yatırım yapan bir dayanışma girişimidir. Çeşitliliğin ve fırsat eşitliğinin sağlık hizmetlerini güçlendirdiğine inanıyoruz. Burs; maddi desteğin yanı sıra mentorluk, ağ kurma ve yetkinlik geliştirme olanakları sunar.
+          <strong>“Bizi Türk Doktorlarına Emanet Edin”</strong>, kadın tıp öğrencilerine yatırım yapan bir dayanışma
+          girişimidir. Çeşitliliğin ve fırsat eşitliğinin sağlık hizmetlerini güçlendirdiğine inanıyoruz. Burs; maddi
+          desteğin yanı sıra mentorluk, ağ kurma ve yetkinlik geliştirme olanakları sunar.
         </p>
 
         <!-- ✏️ İçerik Yer Tutucu (Siz yazacaksınız) -->
         <div class="mt-6 p-5 rounded-2xl bg-yellow-50 border border-yellow-200">
           <h3 class="font-semibold text-yellow-900">BTDEE hakkında</h3>
           <p class="mt-2 text-sm text-yellow-800">
-            <p class="text-gray-700 leading-relaxed">
-  Bizler, Avrupa'da yaşayan Türk vatandaşları olarak hekimlerimizin gösterdiği inanılmaz özverili çalışmanın ve vatandaşlarımız için yarattığı erişilebilir sağlık hizmetinin farkındayız. Üniversite sınavında üstün başarı göstererek Türkiye’nin en iyi ve köklü tıp okullarından Hacettepe’ye yerleşmiş kız öğrencilerimize destek olmak amacıyla bir fon oluşturduk.
-</p>
+          <p class="text-gray-700 leading-relaxed">
+            Bizler, Avrupa'da yaşayan Türk vatandaşları olarak hekimlerimizin gösterdiği inanılmaz özverili çalışmanın
+            ve vatandaşlarımız için yarattığı erişilebilir sağlık hizmetinin farkındayız. Üniversite sınavında üstün
+            başarı göstererek Türkiye’nin en iyi ve köklü tıp okullarından Hacettepe’ye yerleşmiş kız öğrencilerimize
+            destek olmak amacıyla bir fon oluşturduk.
+          </p>
 
-<p class="text-gray-700 leading-relaxed mt-4">
-  BTDEE bir kurum değil, sadece bir ekiptir — bizler 
-  <a href="https://benevity.com" target="_blank" rel="noopener noreferrer" class="text-[var(--brand)] hover:text-[var(--brand-2)] font-semibold">Benevity</a>, 
-  <a href="https://btf.org" target="_blank" rel="noopener noreferrer" class="text-[var(--brand)] hover:text-[var(--brand-2)] font-semibold">BTF</a> ve 
-  <a href="https://www.humed.org.tr/" target="_blank" rel="noopener noreferrer" class="text-[var(--brand)] hover:text-[var(--brand-2)] font-semibold">HÜMED</a> 
-  ile çalışarak oluşturduğumuz fonu aktif olarak yönetiyor ve sınırlı kaynaklarımızın gerçekten doğru kişilere ulaştığından emin olmaya çalışıyoruz.
-</p>
+          <p class="text-gray-700 leading-relaxed mt-4">
+            BTDEE bir kurum değil, sadece bir ekiptir — bizler
+            <a href="https://benevity.com" target="_blank" rel="noopener noreferrer"
+              class="text-[var(--brand)] hover:text-[var(--brand-2)] font-semibold">Benevity</a>,
+            <a href="https://btf.org" target="_blank" rel="noopener noreferrer"
+              class="text-[var(--brand)] hover:text-[var(--brand-2)] font-semibold">BTF</a> ve
+            <a href="https://www.humed.org.tr/" target="_blank" rel="noopener noreferrer"
+              class="text-[var(--brand)] hover:text-[var(--brand-2)] font-semibold">HÜMED</a>
+            ile çalışarak oluşturduğumuz fonu aktif olarak yönetiyor ve sınırlı kaynaklarımızın gerçekten doğru kişilere
+            ulaştığından emin olmaya çalışıyoruz.
+          </p>
 
-<p class="text-gray-700 leading-relaxed mt-4">
-  Diğer burslardan farkımız; sponsorlarımızın geleceğin doktorlarıyla doğrudan tanışması ve onlara uzun yıllar destek olmasıdır.
-</p>
+          <p class="text-gray-700 leading-relaxed mt-4">
+            Diğer burslardan farkımız; sponsorlarımızın geleceğin doktorlarıyla doğrudan tanışması ve onlara uzun yıllar
+            destek olmasıdır.
+          </p>
           </p>
           <ul class="mt-3 text-sm text-yellow-800 list-disc pl-5 space-y-1">
             <li>Kuruluş hikayesi ve ilham kaynağı</li>
@@ -206,7 +246,8 @@
         <div class="p-6 rounded-2xl bg-white border border-gray-200 shadow-sm">
           <h3 class="font-semibold">Mentorluk ağı</h3>
           <p class="mt-3 text-sm text-gray-700">
-            Bursiyerler; asistanlar, uzmanlar ve akademisyenlerle eşleştirilerek klinik gelişim, araştırma ve kariyer yollarında rehberlik alırlar.
+            Bursiyerler; asistanlar, uzmanlar ve akademisyenlerle eşleştirilerek klinik gelişim, araştırma ve kariyer
+            yollarında rehberlik alırlar.
           </p>
         </div>
       </div>
@@ -222,66 +263,54 @@
       </div>
 
       <!-- Kişi fotoğrafları için dairesel yer tutucular (isim + unvan) -->
-      <div class="mt-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
+      <div class="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-8">
         <!-- Kart -->
-        <div class="p-4 rounded-2xl bg-white border border-gray-200 shadow-sm text-center">
-          <div class="mx-auto h-20 w-20 rounded-full border border-gray-200 bg-gray-50 flex items-center justify-center">
-            <span class="text-[10px] text-gray-500">120×120</span>
+        <div class="p-6 rounded-2xl bg-white border border-gray-200 shadow-sm text-center">
+          <div
+            class="mx-auto h-28 w-28 rounded-full border border-gray-200 bg-gray-50 flex items-center justify-center">
+            <span class="text-[12px] text-gray-500">224×224</span>
           </div>
-          <div class="mt-3">
-            <div class="text-sm font-semibold">Ad Soyad</div>
-            <div class="text-xs text-gray-500">Kurum / Ünvan</div>
-          </div>
-        </div>
-        <div class="p-4 rounded-2xl bg-white border border-gray-200 shadow-sm text-center">
-          <div class="mx-auto h-20 w-20 rounded-full border border-gray-200 bg-gray-50 flex items-center justify-center">
-            <span class="text-[10px] text-gray-500">120×120</span>
-          </div>
-          <div class="mt-3">
-            <div class="text-sm font-semibold">Ad Soyad</div>
-            <div class="text-xs text-gray-500">Kurum / Ünvan</div>
+          <div class="mt-4">
+            <div class="text-base font-semibold">Simge Nur Taşkın</div>
+            <div class="text-sm text-gray-500">(FY24-Aktif) Kurucu sponsor</div>
           </div>
         </div>
-        <div class="p-4 rounded-2xl bg-white border border-gray-200 shadow-sm text-center">
-          <div class="mx-auto h-20 w-20 rounded-full border border-gray-200 bg-gray-50 flex items-center justify-center">
-            <span class="text-[10px] text-gray-500">120×120</span>
+
+        <div class="p-6 rounded-2xl bg-white border border-gray-200 shadow-sm text-center">
+          <div class="mx-auto h-28 w-28 rounded-full border border-gray-200 overflow-hidden">
+            <img src="https://avatars.githubusercontent.com/u/115022798?v=4" alt="Sadri Gülnaroğlu" />
           </div>
-          <div class="mt-3">
-            <div class="text-sm font-semibold">Ad Soyad</div>
-            <div class="text-xs text-gray-500">Kurum / Ünvan</div>
-          </div>
-        </div>
-        <div class="p-4 rounded-2xl bg-white border border-gray-200 shadow-sm text-center">
-          <div class="mx-auto h-20 w-20 rounded-full border border-gray-200 bg-gray-50 flex items-center justify-center">
-            <span class="text-[10px] text-gray-500">120×120</span>
-          </div>
-          <div class="mt-3">
-            <div class="text-sm font-semibold">Ad Soyad</div>
-            <div class="text-xs text-gray-500">Kurum / Ünvan</div>
+          <div class="mt-4">
+            <div class="text-base font-semibold">Sadri Gülnaroğlu</div>
+            <div class="text-sm text-gray-500">(FY24 - Aktif) Kurucu sponsor</div>
           </div>
         </div>
-        <div class="p-4 rounded-2xl bg-white border border-gray-200 shadow-sm text-center">
-          <div class="mx-auto h-20 w-20 rounded-full border border-gray-200 bg-gray-50 flex items-center justify-center">
-            <span class="text-[10px] text-gray-500">120×120</span>
+
+        <div class="p-6 rounded-2xl bg-white border border-gray-200 shadow-sm text-center">
+          <div class="mx-auto h-28 w-28 rounded-full border border-gray-200 overflow-hidden">
+            <img src="https://avatars.githubusercontent.com/u/4002936?v=4" alt="Arman Hilmioglu" />
           </div>
-          <div class="mt-3">
-            <div class="text-sm font-semibold">Ad Soyad</div>
-            <div class="text-xs text-gray-500">Kurum / Ünvan</div>
+          <div class="mt-4">
+            <div class="text-base font-semibold">Arman Hilmioğlu</div>
+            <div class="text-sm text-gray-500">Kurucu sponsor & Fon yoneticisi</div>
           </div>
         </div>
-        <div class="p-4 rounded-2xl bg-white border border-gray-200 shadow-sm text-center">
-          <div class="mx-auto h-20 w-20 rounded-full border border-gray-200 bg-gray-50 flex items-center justify-center">
-            <span class="text-[10px] text-gray-500">120×120</span>
+
+        <div class="p-6 rounded-2xl bg-white border border-gray-200 shadow-sm text-center">
+          <div
+            class="mx-auto h-28 w-28 rounded-full border border-gray-200 bg-gray-50 flex items-center justify-center">
+            <span class="text-[12px] text-gray-500"></span>
           </div>
-          <div class="mt-3">
-            <div class="text-sm font-semibold">Ad Soyad</div>
-            <div class="text-xs text-gray-500">Kurum / Ünvan</div>
+          <div class="mt-4">
+            <div class="text-base font-semibold">Emre Ataseven</div>
+            <div class="text-sm text-gray-500">FY24 - FY25 Sponsoru</div>
           </div>
         </div>
       </div>
 
       <div class="mt-8 flex flex-wrap items-center gap-3">
-        <a href="#" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-gray-900 text-white text-sm font-semibold hover:bg-gray-800">
+        <a href="#"
+          class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-gray-900 text-white text-sm font-semibold hover:bg-gray-800">
           Sponsor olun
         </a>
         <p class="text-sm text-gray-600">Kurumsal eşleşme ve isimli burs seçenekleri mevcuttur.</p>
@@ -320,7 +349,8 @@
             </figcaption>
           </div>
           <blockquote class="mt-4 text-sm text-gray-700">
-            “Mentorluk görüşmeleri araştırma ve asistanlık başvurularında netlik sağladı. Görüldüğümü, desteklendiğimi ve güçlü olduğumu hissediyorum.”
+            “Mentorluk görüşmeleri araştırma ve asistanlık başvurularında netlik sağladı. Görüldüğümü, desteklendiğimi
+            ve güçlü olduğumu hissediyorum.”
           </blockquote>
         </figure>
 
@@ -348,9 +378,11 @@
           <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <div>
               <h3 class="text-2xl font-bold">Hazır mısınız?</h3>
-              <p class="mt-1 text-white/90">Belgelerinizi yükleyin ve hikâyenizi paylaşın. Tanışmak için sabırsızlanıyoruz.</p>
+              <p class="mt-1 text-white/90">Belgelerinizi yükleyin ve hikâyenizi paylaşın. Tanışmak için
+                sabırsızlanıyoruz.</p>
             </div>
-            <a href="#" class="px-6 py-3 rounded-xl bg-white text-gray-900 font-semibold hover:bg-gray-100">Başvuru formunu aç</a>
+            <a href="#" class="px-6 py-3 rounded-xl bg-white text-gray-900 font-semibold hover:bg-gray-100">Başvuru
+              formunu aç</a>
           </div>
         </div>
       </div>
@@ -373,4 +405,5 @@
     </div>
   </footer>
 </body>
+
 </html>
